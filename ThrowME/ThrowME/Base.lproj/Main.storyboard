@@ -36,12 +36,20 @@
                                     <action selector="StartButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="vVG-rD-kAJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vh1-jX-eAq">
+                                <rect key="frame" x="139" y="167" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="StartButton" destination="ayE-Gq-AHx" id="zrY-lo-McY"/>
+                        <outlet property="StartStatusText" destination="Vh1-jX-eAq" id="BAD-tt-muI"/>
                         <outlet property="UserStatusText" destination="Grm-eh-UaK" id="fVp-Qc-xkg"/>
                     </connections>
                 </viewController>
