@@ -26,6 +26,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var StabilizationStatusText: UILabel!
     
+    @IBOutlet weak var PressButtonHint: UILabel!
+    
+    @IBOutlet weak var ThrowPhoneHint: UILabel!
+    
+    @IBOutlet weak var RecalHint: UILabel!
+    
+    @IBOutlet weak var RecaliStatusHint: UILabel!
+    
+    @IBOutlet weak var RecaliStatus: UILabel!
+    
+    @IBOutlet weak var ComCompleteHint: UILabel!
+    
+    
     var isSteady:Bool = false
     var isStill:Bool = false
     var currentColor:String = "red"
@@ -53,22 +66,24 @@ class ViewController: UIViewController {
         if(self.state == "wait_for_tap_2") {
             //stop stability checking
             self.motionActivityManager.stopActivityUpdates()
-            //self.StartStatusText.text = "Started"
             self.state = "started_3"
             
             //disable the StartButton and change the button text into "Throw Me!"
             self.StartButton.isEnabled = false
+            self.StartButton.isHidden = false
+            
+            self.ThrowPhoneHint.isHidden = false
+            self.StabilizationStatusText.text = " DONE "
+            self.StabilizationStatusText.backgroundColor = GREEN
+            self.StabilizationStatusText.textColor = WHITE
             
             //self.StartButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 255.0/255.0, blue: 0.0, alpha: 0.4)
-//            self.InstructionPicture.image = UIImage(named:"wait_for_throw.png")
-            self.StabilizationStatusText.text = ""
             
             //start height checking and get the value in ThrowDistance
             startRelativeAltitudeUpdates()
             
             //stablizing
-            self.state = "wait_for_stablizing_4"
-            startActivityUpdates()
+            
             
             //device stablized, state became "stablized_5"
             //now we can show user the result.
@@ -82,7 +97,11 @@ class ViewController: UIViewController {
             //self.UserStatusText.text = "\nThis phone is too old to use this App\n"
             return
         }
-        
+        if(self.state == "wait_for_stablizing_4") {
+            self.RecalHint.isHidden = false
+            self.RecaliStatusHint.isHidden = false
+            self.RecaliStatus.isHidden = false
+        }
         //initializing and getting data
         let queue = OperationQueue.current
         self.motionActivityManager.startActivityUpdates(to: queue!, withHandler: {
@@ -151,17 +170,18 @@ class ViewController: UIViewController {
             let currentHeight = altitudeData!.relativeAltitude.doubleValue
             var text = "---Height data---\n"
             text += "relative Altitude: \(currentHeight) m\n"
-            //update HeightText/////////////////////////////////////////
-            self.HeightText.text = text
+            
             //update the throw distance/////////////////////////////////
-            if(currentHeight >= preHeight) {
+            if((currentHeight-preHeight)>=(-0.01)) {
                 preHeight = currentHeight
             }
             else {
                 self.ThrowDistance = preHeight
                 print("\(preHeight)")
-                //self.StartStatusText.text = "\(preHeight)"
-                self.altimeter.stopRelativeAltitudeUpdates()
+                //self.altimeter.stopRelativeAltitudeUpdates()
+                
+                self.state = "wait_for_stablizing_4"
+                self.startActivityUpdates()
             }
             
         })
@@ -171,34 +191,37 @@ class ViewController: UIViewController {
     func checkSteadyAndStill() -> String{
         if(self.state == "searching_1" || self.state == "wait_for_tap_2") {
             if(self.isStill == true && self.isSteady == true) {
-                self.StartButton.alpha = 0.6
                 self.StartButton.isEnabled = true
+                self.StartButton.isHidden = false
                 self.StabilityBox.backgroundColor = GREEN
                 self.state = "wait_for_tap_2"
                 self.WifiView.image = UIImage(named:"wifi_high.png")
                 self.StabilizationStatusText.text = " HIGH "
                 self.StabilizationStatusText.backgroundColor = GREEN
                 self.StabilizationStatusText.textColor = WHITE
+                self.PressButtonHint.isHidden = false
                 return "green"
             }
             else if(self.isStill == true || self.isSteady == true) {
-                self.StartButton.alpha = 0.4
+                self.StartButton.isHidden = true
                 self.StartButton.isEnabled = false
                 self.StabilityBox.backgroundColor = YELLOW
                 self.WifiView.image = UIImage(named:"wifi_medium.png")
                 self.StabilizationStatusText.text = " MEDIUM "
                 self.StabilizationStatusText.backgroundColor = YELLOW
                 self.StabilizationStatusText.textColor = WHITE
+                self.PressButtonHint.isHidden = true
                 return "yellow"
             }
             else {
-                self.StartButton.alpha = 0.4
+                self.StartButton.isHidden = true
                 self.StartButton.isEnabled = false
                 self.StabilityBox.backgroundColor = RED
                 self.WifiView.image = UIImage(named:"wifi_low.png")
                 self.StabilizationStatusText.text = " LOW "
                 self.StabilizationStatusText.backgroundColor = RED
                 self.StabilizationStatusText.textColor = WHITE
+                self.PressButtonHint.isHidden = true
                 return "red"
             }
         }
@@ -207,26 +230,38 @@ class ViewController: UIViewController {
                 self.StabilityBox.backgroundColor = GREEN
                 self.state = "stablized_5"
                 self.WifiView.image = UIImage(named:"wifi_high.png")
-                self.StabilizationStatusText.text = " HIGH "
-                self.StabilizationStatusText.backgroundColor = GREEN
-                self.StabilizationStatusText.textColor = WHITE
+                self.RecaliStatus.text = " HIGH "
+                self.RecaliStatus.backgroundColor = GREEN
+                self.RecaliStatus.textColor = WHITE
                 self.motionActivityManager.stopActivityUpdates()
+                Thread.sleep(forTimeInterval: 0.5)
+                self.RecaliStatus.text = " DONE "
+                Thread.sleep(forTimeInterval: 0.5)
+                self.ComCompleteHint.isHidden = false
+                
+                self.altimeter.stopRelativeAltitudeUpdates()
+                self.motionActivityManager.stopActivityUpdates()
+                ///////////////////////////////////
+                //// show result //////////////////
+                self.HeightText.text = "\(self.ThrowDistance)"
+                ///////////////////////////////////
+                ///////////////////////////////////
                 return "green"
             }
             else if(self.isStill == true || self.isSteady == true) {
                 self.StabilityBox.backgroundColor = YELLOW
                 self.WifiView.image = UIImage(named:"wifi_medium.png")
-                self.StabilizationStatusText.text = " MEDIUM "
-                self.StabilizationStatusText.backgroundColor = YELLOW
-                self.StabilizationStatusText.textColor = WHITE
+                self.RecaliStatus.text = " MEDIUM "
+                self.RecaliStatus.backgroundColor = YELLOW
+                self.RecaliStatus.textColor = WHITE
                 return "yellow"
             }
             else {
                 self.StabilityBox.backgroundColor = RED
                 self.WifiView.image = UIImage(named:"wifi_low.png")
-                self.StabilizationStatusText.text = " LOW "
-                self.StabilizationStatusText.backgroundColor = RED
-                self.StabilizationStatusText.textColor = WHITE
+                self.RecaliStatus.text = " LOW "
+                self.RecaliStatus.backgroundColor = RED
+                self.RecaliStatus.textColor = WHITE
                 return "red"
             }
         }
@@ -245,11 +280,21 @@ class ViewController: UIViewController {
     //initial the state machine and the sensors
     func initializing() {
         self.StartButton.isEnabled = false
-        //self.StartStatusText.text = "Not started"
-        self.StartButton.setTitle("Start", for: .normal)
+        self.StartButton.isHidden = true
+
         self.WifiView.image = UIImage(named:"wifi_low.png")
         self.state = "searching_1"
         self.StabilizationStatusText.text = ""
+        self.RecaliStatus.text = ""
+        self.HeightText.text = "waiting for throw"
+        
+        self.PressButtonHint.isHidden = true
+        self.ThrowPhoneHint.isHidden = true
+        self.RecalHint.isHidden = true
+        self.RecaliStatusHint.isHidden = true
+        self.RecaliStatus.isHidden = true
+        self.ComCompleteHint.isHidden = true
+        
         startActivityUpdates()
     }
     

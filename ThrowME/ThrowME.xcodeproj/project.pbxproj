@@ -14,6 +14,7 @@
 		DC6528D11FEDD0CA001D3F7C /* wifi_medium.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528CE1FEDD0C9001D3F7C /* wifi_medium.png */; };
 		DC6528D21FEDD0CA001D3F7C /* wifi_high.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528CF1FEDD0CA001D3F7C /* wifi_high.png */; };
 		DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528D01FEDD0CA001D3F7C /* wifi_low.png */; };
+		DC6528D71FEED5F6001D3F7C /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528D61FEED5F6001D3F7C /* start_button.png */; };
 		DCB50B461FEAFC6200F5EDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */; };
 		DCB50B481FEAFC6200F5EDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */; };
 		DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB50B491FEAFC6200F5EDE5 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		DC6528CE1FEDD0C9001D3F7C /* wifi_medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi_medium.png; sourceTree = "<group>"; };
 		DC6528CF1FEDD0CA001D3F7C /* wifi_high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi_high.png; sourceTree = "<group>"; };
 		DC6528D01FEDD0CA001D3F7C /* wifi_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi_low.png; sourceTree = "<group>"; };
+		DC6528D61FEED5F6001D3F7C /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_button.png; sourceTree = "<group>"; };
 		DCB50B421FEAFC6100F5EDE5 /* ThrowME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrowME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		DC6528B71FEDAB61001D3F7C /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				DC6528D61FEED5F6001D3F7C /* start_button.png */,
 				DC6528CF1FEDD0CA001D3F7C /* wifi_high.png */,
 				DC6528D01FEDD0CA001D3F7C /* wifi_low.png */,
 				DC6528CE1FEDD0C9001D3F7C /* wifi_medium.png */,
@@ -265,6 +268,7 @@
 				DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */,
 				DC6528D11FEDD0CA001D3F7C /* wifi_medium.png in Resources */,
 				DC6528CC1FEDC1DE001D3F7C /* wait_for_stable.png in Resources */,
+				DC6528D71FEED5F6001D3F7C /* start_button.png in Resources */,
 				DCB50B501FEAFC6200F5EDE5 /* LaunchScreen.storyboard in Resources */,
 				DCB50B4D1FEAFC6200F5EDE5 /* Assets.xcassets in Resources */,
 				DC6528D21FEDD0CA001D3F7C /* wifi_high.png in Resources */,
