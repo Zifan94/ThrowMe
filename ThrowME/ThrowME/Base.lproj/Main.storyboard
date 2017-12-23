@@ -18,33 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="aa" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-eh-UaK">
-                                <rect key="frame" x="30" y="257" width="156" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayE-Gq-AHx">
+                                <rect key="frame" x="139" y="580" width="97" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayE-Gq-AHx">
-                                <rect key="frame" x="116" y="478" width="143" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31718249914396301" green="0.85360663357176314" blue="0.28339629113274062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Start">
+                                <color key="backgroundColor" red="0.31718249910000001" green="0.8536066336" blue="0.28339629109999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="StartButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="vVG-rD-kAJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vh1-jX-eAq">
-                                <rect key="frame" x="139" y="167" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eZE-bT-OFO">
-                                <rect key="frame" x="194" y="250" width="165" height="135"/>
+                                <rect key="frame" x="105" y="20" width="165" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -65,17 +51,41 @@
                                     <action selector="RetryButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="G7l-fk-uEx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1rU-SX-NEM">
+                                <rect key="frame" x="54" y="176" width="266" height="210"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&gt;&gt; Stabilization Status: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76z-Sq-Dzn">
+                                <rect key="frame" x="54" y="427" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-mq-o51">
+                                <rect key="frame" x="252" y="421" width="42" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1rU-SX-NEM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2vr-9q-IU9"/>
+                            <constraint firstItem="76z-Sq-Dzn" firstAttribute="top" secondItem="1rU-SX-NEM" secondAttribute="bottom" constant="41" id="O7R-jp-dSY"/>
+                            <constraint firstItem="76z-Sq-Dzn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="QKJ-qW-AoT"/>
+                            <constraint firstItem="zBZ-mq-o51" firstAttribute="centerY" secondItem="76z-Sq-Dzn" secondAttribute="centerY" id="RaR-Je-fAD"/>
+                            <constraint firstItem="1rU-SX-NEM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="TZH-iN-uDp"/>
+                            <constraint firstItem="zBZ-mq-o51" firstAttribute="height" secondItem="76z-Sq-Dzn" secondAttribute="height" id="tLs-ur-MDj"/>
+                            <constraint firstItem="zBZ-mq-o51" firstAttribute="leading" secondItem="76z-Sq-Dzn" secondAttribute="trailing" constant="2" id="wXF-Du-RBl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="HeightText" destination="eZE-bT-OFO" id="sQr-j7-r5p"/>
                         <outlet property="RetryButton" destination="5xo-bm-b54" id="Wxg-A4-pFC"/>
                         <outlet property="StabilityBox" destination="6qn-GQ-69r" id="S0Y-aI-J3X"/>
+                        <outlet property="StabilizationStatusText" destination="zBZ-mq-o51" id="l3D-Fl-1SI"/>
                         <outlet property="StartButton" destination="ayE-Gq-AHx" id="zrY-lo-McY"/>
-                        <outlet property="StartStatusText" destination="Vh1-jX-eAq" id="BAD-tt-muI"/>
-                        <outlet property="UserStatusText" destination="Grm-eh-UaK" id="fVp-Qc-xkg"/>
+                        <outlet property="WifiView" destination="1rU-SX-NEM" id="lLl-Fz-pI0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
