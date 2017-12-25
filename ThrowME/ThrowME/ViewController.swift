@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var HeightText: UITextView!
     
-    @IBOutlet weak var StabilityBox: UITextField!
-    
     @IBOutlet weak var RetryButton: UIButton!
     
     @IBOutlet weak var WifiView: UIImageView!
@@ -193,7 +191,6 @@ class ViewController: UIViewController {
             if(self.isStill == true && self.isSteady == true) {
                 self.StartButton.isEnabled = true
                 self.StartButton.isHidden = false
-                self.StabilityBox.backgroundColor = GREEN
                 self.state = "wait_for_tap_2"
                 self.WifiView.image = UIImage(named:"wifi_high.png")
                 self.StabilizationStatusText.text = " HIGH "
@@ -203,9 +200,8 @@ class ViewController: UIViewController {
                 return "green"
             }
             else if(self.isStill == true || self.isSteady == true) {
-                self.StartButton.isHidden = true
+//                self.StartButton.isHidden = true
                 self.StartButton.isEnabled = false
-                self.StabilityBox.backgroundColor = YELLOW
                 self.WifiView.image = UIImage(named:"wifi_medium.png")
                 self.StabilizationStatusText.text = " MEDIUM "
                 self.StabilizationStatusText.backgroundColor = YELLOW
@@ -214,9 +210,8 @@ class ViewController: UIViewController {
                 return "yellow"
             }
             else {
-                self.StartButton.isHidden = true
+//                self.StartButton.isHidden = true
                 self.StartButton.isEnabled = false
-                self.StabilityBox.backgroundColor = RED
                 self.WifiView.image = UIImage(named:"wifi_low.png")
                 self.StabilizationStatusText.text = " LOW "
                 self.StabilizationStatusText.backgroundColor = RED
@@ -227,7 +222,6 @@ class ViewController: UIViewController {
         }
         else if(self.state == "wait_for_stablizing_4") {
             if(self.isStill == true && self.isSteady == true) {
-                self.StabilityBox.backgroundColor = GREEN
                 self.state = "stablized_5"
                 self.WifiView.image = UIImage(named:"wifi_high.png")
                 self.RecaliStatus.text = " HIGH "
@@ -249,7 +243,6 @@ class ViewController: UIViewController {
                 return "green"
             }
             else if(self.isStill == true || self.isSteady == true) {
-                self.StabilityBox.backgroundColor = YELLOW
                 self.WifiView.image = UIImage(named:"wifi_medium.png")
                 self.RecaliStatus.text = " MEDIUM "
                 self.RecaliStatus.backgroundColor = YELLOW
@@ -257,7 +250,6 @@ class ViewController: UIViewController {
                 return "yellow"
             }
             else {
-                self.StabilityBox.backgroundColor = RED
                 self.WifiView.image = UIImage(named:"wifi_low.png")
                 self.RecaliStatus.text = " LOW "
                 self.RecaliStatus.backgroundColor = RED
@@ -266,7 +258,6 @@ class ViewController: UIViewController {
             }
         }
         else {
-            self.StabilityBox.backgroundColor = UIColor(displayP3Red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.4)
             return "None"
         }
         
@@ -280,7 +271,7 @@ class ViewController: UIViewController {
     //initial the state machine and the sensors
     func initializing() {
         self.StartButton.isEnabled = false
-        self.StartButton.isHidden = true
+//        self.StartButton.isHidden = true
 
         self.WifiView.image = UIImage(named:"wifi_low.png")
         self.state = "searching_1"
