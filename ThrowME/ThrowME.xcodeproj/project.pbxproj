@@ -15,6 +15,14 @@
 		DC6528D21FEDD0CA001D3F7C /* wifi_high.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528CF1FEDD0CA001D3F7C /* wifi_high.png */; };
 		DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528D01FEDD0CA001D3F7C /* wifi_low.png */; };
 		DC6528D71FEED5F6001D3F7C /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528D61FEED5F6001D3F7C /* start_button.png */; };
+		DC6528DA1FF01517001D3F7C /* info_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528D81FF01515001D3F7C /* info_icon.png */; };
+		DC6528DB1FF01517001D3F7C /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528D91FF01517001D3F7C /* refresh_icon.png */; };
+		DC6528DE1FF01B71001D3F7C /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528DC1FF01B70001D3F7C /* check.png */; };
+		DC6528DF1FF01B71001D3F7C /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528DD1FF01B71001D3F7C /* refresh.png */; };
+		DC6528E21FF09463001D3F7C /* round_check.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528E01FF09463001D3F7C /* round_check.png */; };
+		DC6528E31FF09463001D3F7C /* round_fresh.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528E11FF09463001D3F7C /* round_fresh.png */; };
+		DC6528E51FF0B302001D3F7C /* round_refresh_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528E41FF0B302001D3F7C /* round_refresh_2.png */; };
+		DC6528E71FF0B307001D3F7C /* round_check_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528E61FF0B307001D3F7C /* round_check_2.png */; };
 		DCB50B461FEAFC6200F5EDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */; };
 		DCB50B481FEAFC6200F5EDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */; };
 		DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB50B491FEAFC6200F5EDE5 /* Main.storyboard */; };
@@ -50,6 +58,14 @@
 		DC6528CF1FEDD0CA001D3F7C /* wifi_high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi_high.png; sourceTree = "<group>"; };
 		DC6528D01FEDD0CA001D3F7C /* wifi_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi_low.png; sourceTree = "<group>"; };
 		DC6528D61FEED5F6001D3F7C /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_button.png; sourceTree = "<group>"; };
+		DC6528D81FF01515001D3F7C /* info_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_icon.png; sourceTree = "<group>"; };
+		DC6528D91FF01517001D3F7C /* refresh_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_icon.png; sourceTree = "<group>"; };
+		DC6528DC1FF01B70001D3F7C /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		DC6528DD1FF01B71001D3F7C /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		DC6528E01FF09463001D3F7C /* round_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_check.png; sourceTree = "<group>"; };
+		DC6528E11FF09463001D3F7C /* round_fresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_fresh.png; sourceTree = "<group>"; };
+		DC6528E41FF0B302001D3F7C /* round_refresh_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_refresh_2.png; sourceTree = "<group>"; };
+		DC6528E61FF0B307001D3F7C /* round_check_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_check_2.png; sourceTree = "<group>"; };
 		DCB50B421FEAFC6100F5EDE5 /* ThrowME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrowME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +109,14 @@
 		DC6528B71FEDAB61001D3F7C /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				DC6528E61FF0B307001D3F7C /* round_check_2.png */,
+				DC6528E41FF0B302001D3F7C /* round_refresh_2.png */,
+				DC6528DC1FF01B70001D3F7C /* check.png */,
+				DC6528E01FF09463001D3F7C /* round_check.png */,
+				DC6528E11FF09463001D3F7C /* round_fresh.png */,
+				DC6528DD1FF01B71001D3F7C /* refresh.png */,
+				DC6528D81FF01515001D3F7C /* info_icon.png */,
+				DC6528D91FF01517001D3F7C /* refresh_icon.png */,
 				DC6528D61FEED5F6001D3F7C /* start_button.png */,
 				DC6528CF1FEDD0CA001D3F7C /* wifi_high.png */,
 				DC6528D01FEDD0CA001D3F7C /* wifi_low.png */,
@@ -265,15 +289,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6528CB1FEDC1DE001D3F7C /* wait_for_press.png in Resources */,
+				DC6528E51FF0B302001D3F7C /* round_refresh_2.png in Resources */,
 				DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */,
+				DC6528DE1FF01B71001D3F7C /* check.png in Resources */,
 				DC6528D11FEDD0CA001D3F7C /* wifi_medium.png in Resources */,
+				DC6528E31FF09463001D3F7C /* round_fresh.png in Resources */,
+				DC6528DF1FF01B71001D3F7C /* refresh.png in Resources */,
+				DC6528DB1FF01517001D3F7C /* refresh_icon.png in Resources */,
 				DC6528CC1FEDC1DE001D3F7C /* wait_for_stable.png in Resources */,
+				DC6528E21FF09463001D3F7C /* round_check.png in Resources */,
+				DC6528DA1FF01517001D3F7C /* info_icon.png in Resources */,
 				DC6528D71FEED5F6001D3F7C /* start_button.png in Resources */,
 				DCB50B501FEAFC6200F5EDE5 /* LaunchScreen.storyboard in Resources */,
 				DCB50B4D1FEAFC6200F5EDE5 /* Assets.xcassets in Resources */,
 				DC6528D21FEDD0CA001D3F7C /* wifi_high.png in Resources */,
 				DC6528B91FEDAB70001D3F7C /* phone.PNG in Resources */,
 				DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */,
+				DC6528E71FF0B307001D3F7C /* round_check_2.png in Resources */,
 				DC6528CD1FEDC1DE001D3F7C /* wait_for_throw.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
