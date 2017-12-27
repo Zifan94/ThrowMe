@@ -25,6 +25,7 @@
 		DC6528E71FF0B307001D3F7C /* round_check_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528E61FF0B307001D3F7C /* round_check_2.png */; };
 		DC6528F51FF2CD2B001D3F7C /* instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528F41FF2CD2A001D3F7C /* instruction.png */; };
 		DC6528F71FF2CE5C001D3F7C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6528F61FF2CE5C001D3F7C /* InfoViewController.swift */; };
+		DC6529031FF463E2001D3F7C /* cmd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529021FF463E2001D3F7C /* cmd.png */; };
 		DCB50B461FEAFC6200F5EDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */; };
 		DCB50B481FEAFC6200F5EDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */; };
 		DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB50B491FEAFC6200F5EDE5 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		DC6528E61FF0B307001D3F7C /* round_check_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_check_2.png; sourceTree = "<group>"; };
 		DC6528F41FF2CD2A001D3F7C /* instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction.png; sourceTree = "<group>"; };
 		DC6528F61FF2CE5C001D3F7C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DC6529021FF463E2001D3F7C /* cmd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cmd.png; sourceTree = "<group>"; };
 		DCB50B421FEAFC6100F5EDE5 /* ThrowME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrowME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		DC6528B71FEDAB61001D3F7C /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				DC6529021FF463E2001D3F7C /* cmd.png */,
 				DC6528F41FF2CD2A001D3F7C /* instruction.png */,
 				DC6528E61FF0B307001D3F7C /* round_check_2.png */,
 				DC6528E41FF0B302001D3F7C /* round_refresh_2.png */,
@@ -297,6 +300,7 @@
 				DC6528CB1FEDC1DE001D3F7C /* wait_for_press.png in Resources */,
 				DC6528E51FF0B302001D3F7C /* round_refresh_2.png in Resources */,
 				DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */,
+				DC6529031FF463E2001D3F7C /* cmd.png in Resources */,
 				DC6528DE1FF01B71001D3F7C /* check.png in Resources */,
 				DC6528F51FF2CD2B001D3F7C /* instruction.png in Resources */,
 				DC6528D11FEDD0CA001D3F7C /* wifi_medium.png in Resources */,
