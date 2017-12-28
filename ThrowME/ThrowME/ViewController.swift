@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ComCompleteHint: UILabel!
     
+    @IBOutlet weak var CMDView: UIImageView!
     
     var isSteady:Bool = false
     var isStill:Bool = false
@@ -55,6 +56,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.CMDView.layer.shadowColor = UIColor.black.cgColor
+        self.CMDView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        self.CMDView.layer.shadowOpacity = 1.0
+        self.CMDView.layer.shadowRadius = 8.0
+        self.CMDView.clipsToBounds = false
         
         //self.state = "searching_1"
         initializing()
@@ -228,9 +235,9 @@ class ViewController: UIViewController {
                 self.RecaliStatus.backgroundColor = GREEN
                 self.RecaliStatus.textColor = WHITE
                 self.motionActivityManager.stopActivityUpdates()
-                Thread.sleep(forTimeInterval: 0.5)
+                Thread.sleep(forTimeInterval: 0.3)
                 self.RecaliStatus.text = " DONE "
-                Thread.sleep(forTimeInterval: 0.5)
+                Thread.sleep(forTimeInterval: 0.3)
                 self.ComCompleteHint.isHidden = false
                 
                 self.altimeter.stopRelativeAltitudeUpdates()
@@ -238,6 +245,14 @@ class ViewController: UIViewController {
                 ///////////////////////////////////
                 //// show result //////////////////
                 self.HeightText.text = "\(self.ThrowDistance)"
+                
+                let singleton = Singleton.sharedInstance()
+                singleton.text = "\(self.ThrowDistance)"
+                
+                let sb = UIStoryboard(name:"Main", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "ResultVC") as! ResultViewController
+                self.present(vc, animated: true, completion: nil)
+                
                 ///////////////////////////////////
                 ///////////////////////////////////
                 return "green"
