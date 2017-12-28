@@ -199,7 +199,7 @@ class ViewController: UIViewController {
                 self.StartButton.isEnabled = true
                 self.StartButton.isHidden = false
                 self.state = "wait_for_tap_2"
-                self.WifiView.image = UIImage(named:"wifi_high.png")
+                self.WifiView.image = UIImage(named:"bar_high.png")
                 self.StabilizationStatusText.text = " HIGH "
                 self.StabilizationStatusText.backgroundColor = GREEN
                 self.StabilizationStatusText.textColor = WHITE
@@ -209,7 +209,7 @@ class ViewController: UIViewController {
             else if(self.isStill == true || self.isSteady == true) {
 //                self.StartButton.isHidden = true
                 self.StartButton.isEnabled = false
-                self.WifiView.image = UIImage(named:"wifi_medium.png")
+                self.WifiView.image = UIImage(named:"bar_medium.png")
                 self.StabilizationStatusText.text = " MEDIUM "
                 self.StabilizationStatusText.backgroundColor = YELLOW
                 self.StabilizationStatusText.textColor = WHITE
@@ -219,7 +219,7 @@ class ViewController: UIViewController {
             else {
 //                self.StartButton.isHidden = true
                 self.StartButton.isEnabled = false
-                self.WifiView.image = UIImage(named:"wifi_low.png")
+                self.WifiView.image = UIImage(named:"bar_low.png")
                 self.StabilizationStatusText.text = " LOW "
                 self.StabilizationStatusText.backgroundColor = RED
                 self.StabilizationStatusText.textColor = WHITE
@@ -230,7 +230,7 @@ class ViewController: UIViewController {
         else if(self.state == "wait_for_stablizing_4") {
             if(self.isStill == true && self.isSteady == true) {
                 self.state = "stablized_5"
-                self.WifiView.image = UIImage(named:"wifi_high.png")
+                self.WifiView.image = UIImage(named:"bar_high.png")
                 self.RecaliStatus.text = " HIGH "
                 self.RecaliStatus.backgroundColor = GREEN
                 self.RecaliStatus.textColor = WHITE
@@ -258,14 +258,14 @@ class ViewController: UIViewController {
                 return "green"
             }
             else if(self.isStill == true || self.isSteady == true) {
-                self.WifiView.image = UIImage(named:"wifi_medium.png")
+                self.WifiView.image = UIImage(named:"bar_medium.png")
                 self.RecaliStatus.text = " MEDIUM "
                 self.RecaliStatus.backgroundColor = YELLOW
                 self.RecaliStatus.textColor = WHITE
                 return "yellow"
             }
             else {
-                self.WifiView.image = UIImage(named:"wifi_low.png")
+                self.WifiView.image = UIImage(named:"bar_low.png")
                 self.RecaliStatus.text = " LOW "
                 self.RecaliStatus.backgroundColor = RED
                 self.RecaliStatus.textColor = WHITE
@@ -288,7 +288,7 @@ class ViewController: UIViewController {
         self.StartButton.isEnabled = false
 //        self.StartButton.isHidden = true
 
-        self.WifiView.image = UIImage(named:"wifi_low.png")
+        self.WifiView.image = UIImage(named:"bar_low.png")
         self.state = "searching_1"
         self.StabilizationStatusText.text = ""
         self.RecaliStatus.text = ""
