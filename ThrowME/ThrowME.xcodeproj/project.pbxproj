@@ -26,6 +26,12 @@
 		DC6528F51FF2CD2B001D3F7C /* instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528F41FF2CD2A001D3F7C /* instruction.png */; };
 		DC6528F71FF2CE5C001D3F7C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6528F61FF2CE5C001D3F7C /* InfoViewController.swift */; };
 		DC6529031FF463E2001D3F7C /* cmd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529021FF463E2001D3F7C /* cmd.png */; };
+		DC6529051FF48308001D3F7C /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6529041FF48308001D3F7C /* Singleton.swift */; };
+		DC6529071FF483D2001D3F7C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6529061FF483D2001D3F7C /* ResultViewController.swift */; };
+		DC65290A1FF4BDB2001D3F7C /* lvl_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529081FF4BDB2001D3F7C /* lvl_1.png */; };
+		DC65290B1FF4BDB2001D3F7C /* lvl_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529091FF4BDB2001D3F7C /* lvl_2.png */; };
+		DC65290E1FF4C1D3001D3F7C /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = DC65290C1FF4C1D2001D3F7C /* goback.png */; };
+		DC65290F1FF4C1D3001D3F7C /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = DC65290D1FF4C1D2001D3F7C /* download.png */; };
 		DCB50B461FEAFC6200F5EDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */; };
 		DCB50B481FEAFC6200F5EDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */; };
 		DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB50B491FEAFC6200F5EDE5 /* Main.storyboard */; };
@@ -72,6 +78,12 @@
 		DC6528F41FF2CD2A001D3F7C /* instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction.png; sourceTree = "<group>"; };
 		DC6528F61FF2CE5C001D3F7C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		DC6529021FF463E2001D3F7C /* cmd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cmd.png; sourceTree = "<group>"; };
+		DC6529041FF48308001D3F7C /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		DC6529061FF483D2001D3F7C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DC6529081FF4BDB2001D3F7C /* lvl_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lvl_1.png; sourceTree = "<group>"; };
+		DC6529091FF4BDB2001D3F7C /* lvl_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lvl_2.png; sourceTree = "<group>"; };
+		DC65290C1FF4C1D2001D3F7C /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
+		DC65290D1FF4C1D2001D3F7C /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		DCB50B421FEAFC6100F5EDE5 /* ThrowME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrowME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +127,10 @@
 		DC6528B71FEDAB61001D3F7C /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				DC65290D1FF4C1D2001D3F7C /* download.png */,
+				DC65290C1FF4C1D2001D3F7C /* goback.png */,
+				DC6529081FF4BDB2001D3F7C /* lvl_1.png */,
+				DC6529091FF4BDB2001D3F7C /* lvl_2.png */,
 				DC6529021FF463E2001D3F7C /* cmd.png */,
 				DC6528F41FF2CD2A001D3F7C /* instruction.png */,
 				DC6528E61FF0B307001D3F7C /* round_check_2.png */,
@@ -164,10 +180,12 @@
 				DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */,
 				DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */,
 				DC6528F61FF2CE5C001D3F7C /* InfoViewController.swift */,
+				DC6529061FF483D2001D3F7C /* ResultViewController.swift */,
 				DCB50B491FEAFC6200F5EDE5 /* Main.storyboard */,
 				DCB50B4C1FEAFC6200F5EDE5 /* Assets.xcassets */,
 				DCB50B4E1FEAFC6200F5EDE5 /* LaunchScreen.storyboard */,
 				DCB50B511FEAFC6200F5EDE5 /* Info.plist */,
+				DC6529041FF48308001D3F7C /* Singleton.swift */,
 			);
 			path = ThrowME;
 			sourceTree = "<group>";
@@ -298,11 +316,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6528CB1FEDC1DE001D3F7C /* wait_for_press.png in Resources */,
+				DC65290F1FF4C1D3001D3F7C /* download.png in Resources */,
 				DC6528E51FF0B302001D3F7C /* round_refresh_2.png in Resources */,
 				DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */,
 				DC6529031FF463E2001D3F7C /* cmd.png in Resources */,
 				DC6528DE1FF01B71001D3F7C /* check.png in Resources */,
+				DC65290B1FF4BDB2001D3F7C /* lvl_2.png in Resources */,
 				DC6528F51FF2CD2B001D3F7C /* instruction.png in Resources */,
+				DC65290A1FF4BDB2001D3F7C /* lvl_1.png in Resources */,
 				DC6528D11FEDD0CA001D3F7C /* wifi_medium.png in Resources */,
 				DC6528E31FF09463001D3F7C /* round_fresh.png in Resources */,
 				DC6528DF1FF01B71001D3F7C /* refresh.png in Resources */,
@@ -315,6 +336,7 @@
 				DCB50B4D1FEAFC6200F5EDE5 /* Assets.xcassets in Resources */,
 				DC6528D21FEDD0CA001D3F7C /* wifi_high.png in Resources */,
 				DC6528B91FEDAB70001D3F7C /* phone.PNG in Resources */,
+				DC65290E1FF4C1D3001D3F7C /* goback.png in Resources */,
 				DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */,
 				DC6528E71FF0B307001D3F7C /* round_check_2.png in Resources */,
 				DC6528CD1FEDC1DE001D3F7C /* wait_for_throw.png in Resources */,
@@ -342,7 +364,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6529071FF483D2001D3F7C /* ResultViewController.swift in Sources */,
 				DCB50B481FEAFC6200F5EDE5 /* ViewController.swift in Sources */,
+				DC6529051FF48308001D3F7C /* Singleton.swift in Sources */,
 				DC6528F71FF2CE5C001D3F7C /* InfoViewController.swift in Sources */,
 				DCB50B461FEAFC6200F5EDE5 /* AppDelegate.swift in Sources */,
 			);
