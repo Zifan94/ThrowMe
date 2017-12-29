@@ -235,9 +235,9 @@ class ViewController: UIViewController {
                 self.RecaliStatus.backgroundColor = GREEN
                 self.RecaliStatus.textColor = WHITE
                 self.motionActivityManager.stopActivityUpdates()
-                Thread.sleep(forTimeInterval: 0.3)
+                Thread.sleep(forTimeInterval: 0.5)
                 self.RecaliStatus.text = " DONE "
-                Thread.sleep(forTimeInterval: 0.3)
+                Thread.sleep(forTimeInterval: 0.5)
                 self.ComCompleteHint.isHidden = false
                 
                 self.altimeter.stopRelativeAltitudeUpdates()
@@ -248,7 +248,7 @@ class ViewController: UIViewController {
                 
                 let singleton = Singleton.sharedInstance()
                 singleton.text = "\(self.ThrowDistance)"
-                
+                Thread.sleep(forTimeInterval: 1.5)
                 let sb = UIStoryboard(name:"Main", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "ResultVC") as! ResultViewController
                 self.present(vc, animated: true, completion: nil)

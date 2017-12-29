@@ -14,6 +14,9 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var downloadButton: UIButton!
     
+    @IBOutlet weak var ResultImage: UIImageView!
+    
+    @IBOutlet weak var HeightLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +34,30 @@ class ResultViewController: UIViewController {
         self.downloadButton.clipsToBounds = false
         
         let singleton = Singleton.sharedInstance()
+        let orgHeightStr = singleton.text
+        var Height = (orgHeightStr! as NSString).doubleValue
+        Height = Height * 100.0
+        if Height<11 {
+            self.ResultImage.image = UIImage(named:"lvl_1.png")
+        }
+        else if Height<31 {
+            self.ResultImage.image = UIImage(named:"lvl_2.png")
+        }
+        else if Height<61 {
+            self.ResultImage.image = UIImage(named:"lvl_3.png")
+        }
+        else if Height<101 {
+            self.ResultImage.image = UIImage(named:"lvl_4.png")
+        }
+        
+        let finalHeightStr = String(format: "%.2f", Height)
+        self.HeightLabel.text = finalHeightStr+" CM"
+        
+
+        
         print("/////////////")
         print(singleton.text)
+        print(finalHeightStr)
         print("/////////////")
     }
 
@@ -43,10 +68,35 @@ class ResultViewController: UIViewController {
     }
     
     
+    @IBAction func saveImageToAlbum(_ sender: Any) {
+        self.backButton.isHidden = true
+        self.downloadButton.isHidden = true
+        
+        self.screenSnapshot(save: true)
+        
+        self.backButton.isHidden = false
+        self.downloadButton.isHidden = false
+        //UIImageWriteToSavedPhotosAlbum(self.ResultImage.image!, "image:didFinishSavingWithError:contextInfo: ", nil, nil)
+    }
     
+//    func image(image: UIImage, didFinishSavingWithError: NSError?,contextInfo: AnyObject) {
+//        if didFinishSavingWithError != nil {
+//            print("error!")
+//            return
+//        }
+//        print("image was saved")
+//    }
     
-    
-    
+    func screenSnapshot(save: Bool) -> UIImage? {
+        guard let window = UIApplication.shared.keyWindow else { return nil }
+        UIGraphicsBeginImageContextWithOptions(window.bounds.size, false, 0.0)
+        window.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        if save { UIImageWriteToSavedPhotosAlbum(image!, self, nil, nil) }
+        return image
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

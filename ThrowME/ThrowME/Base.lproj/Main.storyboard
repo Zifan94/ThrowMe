@@ -225,33 +225,58 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lvl_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-BK-HEW">
                                 <rect key="frame" x="16" y="20" width="343" height="627"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whg-4V-FlW">
-                                <rect key="frame" x="302" y="35" width="41" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="41" id="sDp-df-RgJ"/>
-                                    <constraint firstAttribute="width" secondItem="Whg-4V-FlW" secondAttribute="height" multiplier="1:1" id="w2i-Q5-1rc"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="download.png"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HG-bF-4ny">
                                 <rect key="frame" x="32" y="35" width="41" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="41" id="0FX-K7-epj"/>
                                     <constraint firstAttribute="width" secondItem="4HG-bF-4ny" secondAttribute="height" multiplier="1:1" id="yq1-Tg-auY"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="goback.png"/>
+                                <state key="normal" backgroundImage="goback2.png"/>
                                 <connections>
                                     <action selector="goBackTapped:" destination="f8o-Gj-oRx" eventType="primaryActionTriggered" id="urW-io-Ojb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whg-4V-FlW">
+                                <rect key="frame" x="302" y="35" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="sDp-df-RgJ"/>
+                                    <constraint firstAttribute="width" secondItem="Whg-4V-FlW" secondAttribute="height" multiplier="1:1" id="w2i-Q5-1rc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="download2.png"/>
+                                <connections>
+                                    <action selector="saveImageToAlbum:" destination="f8o-Gj-oRx" eventType="primaryActionTriggered" id="NRn-ZN-aPY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cong.png" translatesAutoresizingMaskIntoConstraints="NO" id="taU-c4-RQq">
+                                <rect key="frame" x="67" y="99" width="240" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="taU-c4-RQq" secondAttribute="height" multiplier="80:19" id="LNd-c8-IWI"/>
+                                    <constraint firstAttribute="width" constant="240" id="knd-mm-OMH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbQ-kU-B03">
+                                <rect key="frame" x="67" y="156" width="240" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UbQ-kU-B03" secondAttribute="height" multiplier="80:17" id="Yy6-Vd-Aq0"/>
+                                    <constraint firstAttribute="width" constant="240" id="g7I-X3-gMc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="taU-c4-RQq" firstAttribute="top" secondItem="4HG-bF-4ny" secondAttribute="bottom" constant="23" id="44K-Gq-XgF"/>
                             <constraint firstItem="AOf-BK-HEW" firstAttribute="centerY" secondItem="2bB-mO-R2V" secondAttribute="centerY" id="8Bw-25-cpi"/>
                             <constraint firstItem="AOf-BK-HEW" firstAttribute="centerX" secondItem="2bB-mO-R2V" secondAttribute="centerX" id="8by-pG-s9s"/>
                             <constraint firstItem="2bB-mO-R2V" firstAttribute="bottom" secondItem="AOf-BK-HEW" secondAttribute="bottom" constant="20" id="9lx-jf-D9Q"/>
+                            <constraint firstItem="taU-c4-RQq" firstAttribute="centerX" secondItem="AOf-BK-HEW" secondAttribute="centerX" id="Bg1-Wj-3NO"/>
+                            <constraint firstItem="UbQ-kU-B03" firstAttribute="centerX" secondItem="AOf-BK-HEW" secondAttribute="centerX" id="Bvq-uS-RFc"/>
                             <constraint firstItem="2bB-mO-R2V" firstAttribute="trailing" secondItem="Whg-4V-FlW" secondAttribute="trailing" constant="32" id="MEf-TR-BBR"/>
                             <constraint firstItem="2bB-mO-R2V" firstAttribute="trailing" secondItem="AOf-BK-HEW" secondAttribute="trailing" constant="16" id="NJ5-hI-KJA"/>
+                            <constraint firstItem="UbQ-kU-B03" firstAttribute="top" secondItem="taU-c4-RQq" secondAttribute="bottom" id="dRR-qJ-2E6"/>
                             <constraint firstItem="Whg-4V-FlW" firstAttribute="top" secondItem="2bB-mO-R2V" secondAttribute="top" constant="15" id="pJb-9i-dKf"/>
                             <constraint firstItem="AOf-BK-HEW" firstAttribute="top" secondItem="2bB-mO-R2V" secondAttribute="top" id="qX9-G4-3mt"/>
                             <constraint firstItem="AOf-BK-HEW" firstAttribute="leading" secondItem="2bB-mO-R2V" secondAttribute="leading" constant="16" id="sZp-yK-61H"/>
@@ -261,6 +286,8 @@
                         <viewLayoutGuide key="safeArea" id="2bB-mO-R2V"/>
                     </view>
                     <connections>
+                        <outlet property="HeightLabel" destination="UbQ-kU-B03" id="qZc-FU-2AZ"/>
+                        <outlet property="ResultImage" destination="AOf-BK-HEW" id="v2V-5B-lbJ"/>
                         <outlet property="backButton" destination="4HG-bF-4ny" id="Rrk-cv-5nc"/>
                         <outlet property="downloadButton" destination="Whg-4V-FlW" id="bDS-lw-TBb"/>
                     </connections>
@@ -312,8 +339,9 @@
     </scenes>
     <resources>
         <image name="cmd.png" width="1510" height="838"/>
-        <image name="download.png" width="300" height="300"/>
-        <image name="goback.png" width="300" height="300"/>
+        <image name="cong.png" width="1264" height="292"/>
+        <image name="download2.png" width="318" height="318"/>
+        <image name="goback2.png" width="318" height="318"/>
         <image name="info_icon.png" width="258" height="258"/>
         <image name="instruction.png" width="974" height="1572"/>
         <image name="lvl_1.png" width="900" height="1480"/>
