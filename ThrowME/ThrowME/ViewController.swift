@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var StartButton: UIButton!
     
-    @IBOutlet weak var HeightText: UITextView!
-    
     @IBOutlet weak var RetryButton: UIButton!
     
     @IBOutlet weak var WifiView: UIImageView!
@@ -37,6 +35,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var ComCompleteHint: UILabel!
     
     @IBOutlet weak var CMDView: UIImageView!
+    
+    @IBOutlet weak var InfoButton: UIButton!
     
     var isSteady:Bool = false
     var isStill:Bool = false
@@ -244,7 +244,6 @@ class ViewController: UIViewController {
                 self.motionActivityManager.stopActivityUpdates()
                 ///////////////////////////////////
                 //// show result //////////////////
-                self.HeightText.text = "\(self.ThrowDistance)"
                 
                 let singleton = Singleton.sharedInstance()
                 singleton.text = "\(self.ThrowDistance)"
@@ -292,7 +291,6 @@ class ViewController: UIViewController {
         self.state = "searching_1"
         self.StabilizationStatusText.text = ""
         self.RecaliStatus.text = ""
-        self.HeightText.text = "waiting for throw"
         
         self.PressButtonHint.isHidden = true
         self.ThrowPhoneHint.isHidden = true
@@ -300,6 +298,12 @@ class ViewController: UIViewController {
         self.RecaliStatusHint.isHidden = true
         self.RecaliStatus.isHidden = true
         self.ComCompleteHint.isHidden = true
+        
+        self.InfoButton.layer.shadowColor = UIColor.black.cgColor
+        self.InfoButton.layer.shadowOffset = CGSize(width: 1, height: 1)
+        self.InfoButton.layer.shadowOpacity = 1.0
+        self.InfoButton.layer.shadowRadius = 4.0
+        self.InfoButton.clipsToBounds = false
         
         startActivityUpdates()
     }

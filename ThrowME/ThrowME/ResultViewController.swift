@@ -37,6 +37,10 @@ class ResultViewController: UIViewController {
         let orgHeightStr = singleton.text
         var Height = (orgHeightStr! as NSString).doubleValue
         Height = Height * 100.0
+        if Height<0  {
+            Height = 0
+        }
+        
         if Height<11 {
             self.ResultImage.image = UIImage(named:"lvl_1.png")
         }
@@ -48,6 +52,18 @@ class ResultViewController: UIViewController {
         }
         else if Height<101 {
             self.ResultImage.image = UIImage(named:"lvl_4.png")
+        }
+        else if Height<131 {
+            self.ResultImage.image = UIImage(named:"lvl_5.png")
+        }
+        else if Height<161 {
+            self.ResultImage.image = UIImage(named:"lvl_6.png")
+        }
+        else if Height<201 {
+            self.ResultImage.image = UIImage(named:"lvl_7.png")
+        }
+        else if Height>=201 {
+            self.ResultImage.image = UIImage(named:"lvl_fi.png")
         }
         
         let finalHeightStr = String(format: "%.2f", Height)
