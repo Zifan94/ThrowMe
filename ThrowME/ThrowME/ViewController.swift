@@ -298,13 +298,7 @@ class ViewController: UIViewController {
         self.RecaliStatusHint.isHidden = true
         self.RecaliStatus.isHidden = true
         self.ComCompleteHint.isHidden = true
-        
-        self.InfoButton.layer.shadowColor = UIColor.black.cgColor
-        self.InfoButton.layer.shadowOffset = CGSize(width: 1, height: 1)
-        self.InfoButton.layer.shadowOpacity = 1.0
-        self.InfoButton.layer.shadowRadius = 4.0
-        self.InfoButton.clipsToBounds = false
-        
+                
         startActivityUpdates()
     }
     
