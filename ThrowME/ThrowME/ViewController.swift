@@ -180,7 +180,7 @@ class ViewController: UIViewController {
             if((currentHeight-preHeight)>=(-0.01)) {
                 preHeight = currentHeight
             }
-            else {
+            else if self.state == "started_3"{
                 self.ThrowDistance = preHeight
                 print("\(preHeight)")
                 //self.altimeter.stopRelativeAltitudeUpdates()
