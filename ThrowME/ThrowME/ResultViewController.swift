@@ -18,6 +18,8 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var HeightLabel: UILabel!
     
+    @IBOutlet weak var stageText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,27 +45,35 @@ class ResultViewController: UIViewController {
         
         if Height<11 {
             self.ResultImage.image = UIImage(named:"lvl_1.png")
+            self.stageText.text = "Stage 1"
         }
         else if Height<31 {
             self.ResultImage.image = UIImage(named:"lvl_2.png")
+            self.stageText.text = "Stage 2"
         }
         else if Height<61 {
             self.ResultImage.image = UIImage(named:"lvl_3.png")
+            self.stageText.text = "Stage 3"
         }
         else if Height<101 {
             self.ResultImage.image = UIImage(named:"lvl_4.png")
+            self.stageText.text = "Stage 4"
         }
         else if Height<131 {
             self.ResultImage.image = UIImage(named:"lvl_5.png")
+            self.stageText.text = "Stage 5"
         }
         else if Height<161 {
             self.ResultImage.image = UIImage(named:"lvl_6.png")
+            self.stageText.text = "Stage 6"
         }
         else if Height<201 {
             self.ResultImage.image = UIImage(named:"lvl_7.png")
+            self.stageText.text = "Stage 7"
         }
         else if Height>=201 {
             self.ResultImage.image = UIImage(named:"lvl_fi.png")
+            self.stageText.text = "Stage 8"
         }
         
         let finalHeightStr = String(format: "%.2f", Height)
