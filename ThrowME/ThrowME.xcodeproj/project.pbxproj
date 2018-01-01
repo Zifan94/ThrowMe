@@ -62,6 +62,10 @@
 		DC65297C1FF88725001D3F7C /* instruction2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC65297B1FF88724001D3F7C /* instruction2.png */; };
 		DC6529861FF9B7F0001D3F7C /* MyLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6529851FF9B7F0001D3F7C /* MyLaunchScreen.storyboard */; };
 		DC6529881FF9B8D6001D3F7C /* signature1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529871FF9B8D6001D3F7C /* signature1.png */; };
+		DC65298B1FF9C066001D3F7C /* agree.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529891FF9C065001D3F7C /* agree.png */; };
+		DC65298C1FF9C066001D3F7C /* disagree.png in Resources */ = {isa = PBXBuildFile; fileRef = DC65298A1FF9C066001D3F7C /* disagree.png */; };
+		DC6529921FF9C541001D3F7C /* term.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529911FF9C541001D3F7C /* term.png */; };
+		DC6529941FF9C773001D3F7C /* bye.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529931FF9C773001D3F7C /* bye.png */; };
 		DCB50B461FEAFC6200F5EDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */; };
 		DCB50B481FEAFC6200F5EDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */; };
 		DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB50B491FEAFC6200F5EDE5 /* Main.storyboard */; };
@@ -144,6 +148,10 @@
 		DC65297B1FF88724001D3F7C /* instruction2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction2.png; sourceTree = "<group>"; };
 		DC6529851FF9B7F0001D3F7C /* MyLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyLaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6529871FF9B8D6001D3F7C /* signature1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature1.png; sourceTree = "<group>"; };
+		DC6529891FF9C065001D3F7C /* agree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agree.png; sourceTree = "<group>"; };
+		DC65298A1FF9C066001D3F7C /* disagree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disagree.png; sourceTree = "<group>"; };
+		DC6529911FF9C541001D3F7C /* term.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = term.png; sourceTree = "<group>"; };
+		DC6529931FF9C773001D3F7C /* bye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bye.png; sourceTree = "<group>"; };
 		DCB50B421FEAFC6100F5EDE5 /* ThrowME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrowME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB50B451FEAFC6200F5EDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB50B471FEAFC6200F5EDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,8 +195,11 @@
 		DC6528B71FEDAB61001D3F7C /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				DC6529891FF9C065001D3F7C /* agree.png */,
+				DC65298A1FF9C066001D3F7C /* disagree.png */,
 				DC6529871FF9B8D6001D3F7C /* signature1.png */,
 				DC6529441FF713F4001D3F7C /* app icon.png */,
+				DC6529911FF9C541001D3F7C /* term.png */,
 				DC65293D1FF7087D001D3F7C /* lvl_5.png */,
 				DC6529791FF87D83001D3F7C /* info.png */,
 				DC65293C1FF7087C001D3F7C /* lvl_6.png */,
@@ -199,6 +210,7 @@
 				DC6529221FF5F58C001D3F7C /* lvl_3.png */,
 				DC6529231FF5F58D001D3F7C /* lvl_4.png */,
 				DC65291E1FF5DD63001D3F7C /* cong.png */,
+				DC6529931FF9C773001D3F7C /* bye.png */,
 				DC65291B1FF5ABDB001D3F7C /* download2.png */,
 				DC65291A1FF5ABDB001D3F7C /* goback2.png */,
 				DC6529101FF5A84A001D3F7C /* bar_high.png */,
@@ -413,7 +425,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC65298B1FF9C066001D3F7C /* agree.png in Resources */,
 				DC6529611FF879CA001D3F7C /* 180.png in Resources */,
+				DC6529941FF9C773001D3F7C /* bye.png in Resources */,
 				DC6529741FF87BC2001D3F7C /* 87.png in Resources */,
 				DC6528CB1FEDC1DE001D3F7C /* wait_for_press.png in Resources */,
 				DC65290F1FF4C1D3001D3F7C /* download.png in Resources */,
@@ -422,6 +436,7 @@
 				DC6529721FF87BC2001D3F7C /* 40.png in Resources */,
 				DC6529261FF5F58E001D3F7C /* lvl_3.png in Resources */,
 				DC6528D31FEDD0CA001D3F7C /* wifi_low.png in Resources */,
+				DC65298C1FF9C066001D3F7C /* disagree.png in Resources */,
 				DC6529861FF9B7F0001D3F7C /* MyLaunchScreen.storyboard in Resources */,
 				DC6529761FF87BC2001D3F7C /* 1024.png in Resources */,
 				DC6529031FF463E2001D3F7C /* cmd.png in Resources */,
@@ -464,6 +479,7 @@
 				DC6529131FF5A84B001D3F7C /* bar_high.png in Resources */,
 				DC65296D1FF87BC2001D3F7C /* 152.png in Resources */,
 				DC6529401FF7087E001D3F7C /* lvl_6.png in Resources */,
+				DC6529921FF9C541001D3F7C /* term.png in Resources */,
 				DC65290E1FF4C1D3001D3F7C /* goback.png in Resources */,
 				DCB50B4B1FEAFC6200F5EDE5 /* Main.storyboard in Resources */,
 				DC6528E71FF0B307001D3F7C /* round_check_2.png in Resources */,
