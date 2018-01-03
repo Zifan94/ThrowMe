@@ -25,8 +25,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="signature1.png" translatesAutoresizingMaskIntoConstraints="NO" id="onL-Vw-BrM">
-                                <rect key="frame" x="70" y="216" width="234" height="234"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signature22.png" translatesAutoresizingMaskIntoConstraints="NO" id="onL-Vw-BrM">
+                                <rect key="frame" x="71" y="226" width="234" height="234"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="onL-Vw-BrM" secondAttribute="height" multiplier="1:1" id="XFS-9r-0Zd"/>
                                     <constraint firstAttribute="width" constant="234" id="cdy-eH-mhc"/>
@@ -50,6 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="signature1.png" width="632" height="632"/>
+        <image name="signature22.png" width="632" height="632"/>
     </resources>
 </document>
