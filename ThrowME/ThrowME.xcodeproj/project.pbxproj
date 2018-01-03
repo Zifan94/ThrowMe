@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC436ADB1FFCD13E0019794B /* signature22.png in Resources */ = {isa = PBXBuildFile; fileRef = DC436ADA1FFCD13E0019794B /* signature22.png */; };
 		DC6528B91FEDAB70001D3F7C /* phone.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DC6528B81FEDAB70001D3F7C /* phone.PNG */; };
 		DC6528CB1FEDC1DE001D3F7C /* wait_for_press.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528C81FEDC1DD001D3F7C /* wait_for_press.png */; };
 		DC6528CC1FEDC1DE001D3F7C /* wait_for_stable.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6528C91FEDC1DE001D3F7C /* wait_for_stable.png */; };
@@ -61,7 +62,6 @@
 		DC65297A1FF87D83001D3F7C /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529791FF87D83001D3F7C /* info.png */; };
 		DC65297C1FF88725001D3F7C /* instruction2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC65297B1FF88724001D3F7C /* instruction2.png */; };
 		DC6529861FF9B7F0001D3F7C /* MyLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6529851FF9B7F0001D3F7C /* MyLaunchScreen.storyboard */; };
-		DC6529881FF9B8D6001D3F7C /* signature1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529871FF9B8D6001D3F7C /* signature1.png */; };
 		DC65298B1FF9C066001D3F7C /* agree.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529891FF9C065001D3F7C /* agree.png */; };
 		DC65298C1FF9C066001D3F7C /* disagree.png in Resources */ = {isa = PBXBuildFile; fileRef = DC65298A1FF9C066001D3F7C /* disagree.png */; };
 		DC6529921FF9C541001D3F7C /* term.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6529911FF9C541001D3F7C /* term.png */; };
@@ -99,6 +99,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC436ADA1FFCD13E0019794B /* signature22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signature22.png; path = ../../../img/screenShot/signature22.png; sourceTree = "<group>"; };
 		DC6528B81FEDAB70001D3F7C /* phone.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.PNG; path = ../../../../../Downloads/phone.PNG; sourceTree = "<group>"; };
 		DC6528C81FEDC1DD001D3F7C /* wait_for_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wait_for_press.png; sourceTree = "<group>"; };
 		DC6528C91FEDC1DE001D3F7C /* wait_for_stable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wait_for_stable.png; sourceTree = "<group>"; };
@@ -153,7 +154,6 @@
 		DC6529791FF87D83001D3F7C /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		DC65297B1FF88724001D3F7C /* instruction2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction2.png; sourceTree = "<group>"; };
 		DC6529851FF9B7F0001D3F7C /* MyLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyLaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC6529871FF9B8D6001D3F7C /* signature1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature1.png; sourceTree = "<group>"; };
 		DC6529891FF9C065001D3F7C /* agree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agree.png; sourceTree = "<group>"; };
 		DC65298A1FF9C066001D3F7C /* disagree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disagree.png; sourceTree = "<group>"; };
 		DC6529911FF9C541001D3F7C /* term.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = term.png; sourceTree = "<group>"; };
@@ -213,9 +213,9 @@
 				DC6529971FFA52C1001D3F7C /* agree_new.png */,
 				DC6529981FFA52C2001D3F7C /* disagree_new.png */,
 				DC6529961FFA52C0001D3F7C /* term_instruction.png */,
+				DC436ADA1FFCD13E0019794B /* signature22.png */,
 				DC6529891FF9C065001D3F7C /* agree.png */,
 				DC65298A1FF9C066001D3F7C /* disagree.png */,
-				DC6529871FF9B8D6001D3F7C /* signature1.png */,
 				DC6529441FF713F4001D3F7C /* app icon.png */,
 				DC6529911FF9C541001D3F7C /* term.png */,
 				DC65293D1FF7087D001D3F7C /* lvl_5.png */,
@@ -465,7 +465,6 @@
 				DC65291D1FF5ABDC001D3F7C /* download2.png in Resources */,
 				DC6529A21FFCBDE0001D3F7C /* new_info.png in Resources */,
 				DC6528D11FEDD0CA001D3F7C /* wifi_medium.png in Resources */,
-				DC6529881FF9B8D6001D3F7C /* signature1.png in Resources */,
 				DC6529701FF87BC2001D3F7C /* 167.png in Resources */,
 				DC65293F1FF7087E001D3F7C /* lvl_7.png in Resources */,
 				DC6528E31FF09463001D3F7C /* round_fresh.png in Resources */,
@@ -486,6 +485,7 @@
 				DC6529141FF5A84B001D3F7C /* bar_medium.png in Resources */,
 				DC6529271FF5F58E001D3F7C /* lvl_4.png in Resources */,
 				DC6528D71FEED5F6001D3F7C /* start_button.png in Resources */,
+				DC436ADB1FFCD13E0019794B /* signature22.png in Resources */,
 				DC6529711FF87BC2001D3F7C /* 80.png in Resources */,
 				DCB50B501FEAFC6200F5EDE5 /* LaunchScreen.storyboard in Resources */,
 				DC65296E1FF87BC2001D3F7C /* 58.png in Resources */,
