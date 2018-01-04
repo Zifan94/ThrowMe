@@ -240,8 +240,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;&gt; Press the ✅ button 👇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jk7-7G-49w">
-                                        <rect key="frame" x="20.5" y="50.5" width="160.5" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;&gt; Press the Green Check button below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jk7-7G-49w">
+                                        <rect key="frame" x="20" y="50.5" width="240" height="15"/>
+                                        <color key="backgroundColor" red="0.19607843137254902" green="0.80392156862745101" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.31718249910000001" green="0.8536066336" blue="0.28339629109999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -292,7 +293,7 @@
                                     <constraint firstItem="CQH-eI-8oI" firstAttribute="centerX" secondItem="slf-9w-UR3" secondAttribute="centerX" id="MhR-ZA-cSd"/>
                                     <constraint firstItem="5Bo-zT-m9K" firstAttribute="top" secondItem="WSb-JG-axF" secondAttribute="bottom" constant="6" id="Vf2-Pa-h1N"/>
                                     <constraint firstItem="zBZ-mq-o51" firstAttribute="centerY" secondItem="76z-Sq-Dzn" secondAttribute="centerY" id="YNZ-PF-MPD"/>
-                                    <constraint firstItem="CQH-eI-8oI" firstAttribute="leading" secondItem="jk7-7G-49w" secondAttribute="trailing" constant="-173" id="axO-5q-cjP"/>
+                                    <constraint firstItem="CQH-eI-8oI" firstAttribute="leading" secondItem="jk7-7G-49w" secondAttribute="trailing" constant="-252" id="axO-5q-cjP"/>
                                     <constraint firstItem="CQH-eI-8oI" firstAttribute="leading" secondItem="76z-Sq-Dzn" secondAttribute="trailing" constant="-157.5" id="c9C-ps-C72"/>
                                     <constraint firstItem="CQH-eI-8oI" firstAttribute="leading" secondItem="xfu-t9-Beb" secondAttribute="trailing" constant="-151.5" id="cgX-E4-aLg"/>
                                     <constraint firstItem="jk7-7G-49w" firstAttribute="top" secondItem="76z-Sq-Dzn" secondAttribute="bottom" constant="6" id="gbU-3B-faX"/>
@@ -366,7 +367,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lvl_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-BK-HEW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lvl_fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-BK-HEW">
                                 <rect key="frame" x="16" y="20" width="343" height="627"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HG-bF-4ny">
@@ -507,8 +508,8 @@
         <image name="download2.png" width="318" height="318"/>
         <image name="goback2.png" width="318" height="318"/>
         <image name="info.png" width="318" height="318"/>
-        <image name="lvl_7.png" width="900" height="1480"/>
-        <image name="new_info.png" width="988" height="1380"/>
+        <image name="lvl_fi.png" width="796" height="1252"/>
+        <image name="new_info.png" width="1078" height="1358"/>
         <image name="round_check_2.png" width="378" height="230"/>
         <image name="round_refresh_2.png" width="376" height="230"/>
         <image name="term.png" width="862" height="436"/>
